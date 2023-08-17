@@ -18,6 +18,7 @@ namespace EFCorePractice
             using (var context = new ItemsManagementContext())
             {
                 var items = context.Items.Include(i => i.Orders).ToList();
+
                 // write the corresponding code to display the items with their orders
 
             }
@@ -27,7 +28,7 @@ namespace EFCorePractice
         {
             using (var context = new ItemsManagementContext())
             {
-                // write the corresponding code to get the first numberOfItemsToRead items
+                // write the corresponding code to get the first X items
                 // Tip: .Take(number) method should help you
 
             }

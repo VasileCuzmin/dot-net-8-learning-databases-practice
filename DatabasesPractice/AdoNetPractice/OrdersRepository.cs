@@ -13,7 +13,6 @@ namespace AdoNetPractice
             {
                 conn.Open();
                 // write the corresponding code to get an order by orderId
-
             }
 
             return order;

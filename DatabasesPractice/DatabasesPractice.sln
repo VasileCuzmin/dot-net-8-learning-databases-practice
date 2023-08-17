@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabasesPractice", "DatabasesPractice\DatabasesPractice.csproj", "{DB9DE57C-A390-4943-8A28-A706D570B06F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatabasesPractice", "DatabasesPractice\DatabasesPractice.csproj", "{DB9DE57C-A390-4943-8A28-A706D570B06F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoNetPractice", "AdoNetPractice\AdoNetPractice.csproj", "{7311BD38-4D42-46E0-8400-E319F3D0EFFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdoNetPractice", "AdoNetPractice\AdoNetPractice.csproj", "{7311BD38-4D42-46E0-8400-E319F3D0EFFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCorePractice", "EFCorePractice\EFCorePractice.csproj", "{8F40ECC8-57E9-4180-B35A-2C9886BDC868}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCorePractice", "EFCorePractice\EFCorePractice.csproj", "{8F40ECC8-57E9-4180-B35A-2C9886BDC868}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDbPractice", "MongoDbPractice\MongoDbPractice.csproj", "{61F355A9-7A1F-412B-B2B9-0C23C7B1DBB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{8F40ECC8-57E9-4180-B35A-2C9886BDC868}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F40ECC8-57E9-4180-B35A-2C9886BDC868}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F40ECC8-57E9-4180-B35A-2C9886BDC868}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61F355A9-7A1F-412B-B2B9-0C23C7B1DBB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61F355A9-7A1F-412B-B2B9-0C23C7B1DBB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61F355A9-7A1F-412B-B2B9-0C23C7B1DBB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61F355A9-7A1F-412B-B2B9-0C23C7B1DBB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
