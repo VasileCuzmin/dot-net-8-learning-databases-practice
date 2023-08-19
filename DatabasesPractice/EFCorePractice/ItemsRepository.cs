@@ -9,7 +9,11 @@ namespace EFCorePractice
             using (var context = new ItemsManagementContext())
             {
                 // write the corresponding code to get and display all items
-
+                var items = context.Items.ToList();
+                foreach (var item in items)
+                {
+                    Console.WriteLine($"{item.Id}, {item.Name}, {item.Price}");
+                }
             }
         }
 
@@ -20,7 +24,15 @@ namespace EFCorePractice
                 var items = context.Items.Include(i => i.Orders).ToList();
 
                 // write the corresponding code to display the items with their orders
-
+                foreach (var item in items)
+                {
+                    Console.WriteLine($"{item.Id}, {item.Name}, {item.Price}");
+                    Console.WriteLine("Orders: ");
+                    foreach (var order in item.Orders)
+                    {
+                        Console.WriteLine($"{order.Id}, {order.NumberOfPieces}");
+                    }
+                }
             }
         }
 
@@ -30,7 +42,12 @@ namespace EFCorePractice
             {
                 // write the corresponding code to get the first X items
                 // Tip: .Take(number) method should help you
+                var items = context.Items.Take(numberOfItemsToRead).ToList();
 
+                foreach (var item in items)
+                {
+                    Console.WriteLine($"{item.Id}, {item.Name}, {item.Price}");
+                }
             }
         }
     }

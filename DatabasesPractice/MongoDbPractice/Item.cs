@@ -5,7 +5,8 @@ namespace MongoDbPractice
 {
     public class Item
     {
-        [BsonId(IdGenerator = typeof(ObjectIdGenerator))] // attribute used to derermine MongoDB driver to generate the IDs for this collection
+        // attribute used to derermine MongoDB driver to generate the IDs for this collection
+        [BsonId(IdGenerator = typeof(ObjectIdGenerator))] 
         public ObjectId Id { get; set; }
 
         public string Name { get; set; }
