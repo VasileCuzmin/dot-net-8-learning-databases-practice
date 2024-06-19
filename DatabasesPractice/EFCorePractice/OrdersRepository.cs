@@ -41,10 +41,7 @@
                 // Tip: .First() method should help you
                 // Don't forget to save your changes with context.SaveChanges();
                 var dbOrder = context.Orders.First();
-
-                dbOrder.NumberOfPieces = 215;
-
-                context.Orders.Update(dbOrder);
+                context.Orders.Remove(dbOrder);
                 context.SaveChanges();
             }
         }
